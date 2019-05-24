@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:text="InternDTU"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center"
+        android:text="presented by :"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:src="@drawable/logo"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="220dp"
+        android:gravity="center"
+        android:text="DTU's 1st INTERNSHIP PORTAL"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70sp"
+        android:orientation="vertical">
+
+
+        <com.cunoraz.gifview.library.GifView
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="10sp"
+
+            android:visibility="gone"
+            app:gif="@mipmap/redcube" />
+        //custom:gif="@drawable/redcube"
+
+
+        <TextView
+            android:id="@+id/tvload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginLeft="6sp"
+            android:layout_marginBottom="4sp"
+
+            android:gravity="center"
+            android:text="Loading..."
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:configChanges="orientation|screenSize"
+        android:visibility="gone">
+
+
+    </WebView>
+
+
+</RelativeLayout>
